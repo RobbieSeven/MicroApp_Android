@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.unisa.microapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+	
+    <!--<permission-->
+        <!--android:name="it.unisa.microapp.permission.MAPS_RECEIVE"-->
+        <!--android:protectionLevel="signature" />-->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+     The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended.
+
+
+    -->
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <supports-screens android:smallScreens="true" />
+
+    <application
+        android:name=".MicroAppGenerator"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait" >
+        <uses-library android:name="com.google.android.maps" />
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAeIQjkQyAyvtf44SieLQwzN-O2JEhPoVg" />
+        <activity
+            android:name=".run2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        
+        
+        <activity
+            android:name=".activities.First"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".activities.MapsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:pathPattern=".*\\.xml"
+                android:scheme="file" />
+        </activity>
+        <!--<activity-->
+            <!--android:name="com.google.ads.AdActivity"-->
+            <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />-->
+        <activity
+            android:name=".editor.BlankMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.ConditionMapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.BlankActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ConditionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activities.ConditionDynamicActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".activities.ListFileActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CameraSaveActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CameraFixedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SelectContactActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CreateContactActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.UpdateContactActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.HillChipherActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.PreviewContactActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SendSmsMessageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CallInterceptActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GpsLocationInterceptActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MapsLocationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CallActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SendMailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.SendStaticMailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.FaceDetectActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.CameraTakeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+            <!-- 
+            android:screenOrientation="landscape" -->
+           
+        </activity>
+        <activity
+            android:name=".activities.PreviewActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.LocationActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.StaticLocationActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.MicroApp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.EditorActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.CreateGestureActivity"
+            android:exported="true"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".editor.GestureBuilderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CatturaGesto"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".editor.ChoiceIconActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".editor.SetConditionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".editor.FunzioniActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".editor.ActivityLoad"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.WebServiceStaticActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.InformationBeepActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationVibrateActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationPromptActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationPrintActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationPreviewActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.DiscovererActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.SpeechToTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.TextToSpeechActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.TextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.StaticTextActivity"
+            android:label="@string/app_name" >
+        </activity>        
+        <activity
+            android:name=".activities.PasswordTextActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.NumberActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.StaticNumberActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.BetweenNumberActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.DomoticActivity"
+            android:label="@string/app_name" >
+        </activity>         
+        <activity
+            android:name=".activities.WebServiceActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".editor.OptionsActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activities.DateActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.StaticDateActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.CurrentDateActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GeolocationActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.GeoaddressActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.InformationErrorActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.StaticContactActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".activities.ImageFlipActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ImageRotateActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ImageScaleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.ImagePaintActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaSelectAudioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaRecAudioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaPlayAudioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaStaticAudioActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaSelectVideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaRecVideoActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name=".activities.MediaPlayVideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaStaticVideoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.MediaPlaySoundActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.AdmobAdviewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.ControllerConditionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".store.AppCaricataActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".store.ZoomActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".store.DownloadSearchAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".store.DownloadAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".store.MyDownloadedAppActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.NewComponentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.SetStateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.NewCompPossibleStates"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.Scaffolding1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".editor.DomoticActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                </intent-filter>
+                </activity>
+        <activity
+            android:name=".activities.Scaffolding2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.Scaffolding3"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".activities.NewCategoryActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".activities.IO_NcActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.IO_info"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.IO_info_out"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".activities.NCEditorActivity"-->
+            <!--android:label="@string/app_name"-->
+            <!--android:screenOrientation="portrait" >-->
+        <!--</activity>-->
+        <activity
+            android:name=".activities.NCEditorInputActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.NCEditorBehaviourActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.NCEditorOutputActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.FBFriendsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+    	<activity
+            android:name=".activities.FBGroupActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activities.FBUploadActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--<activity android:name=".activities.FriendPickerActivity"-->
+                  <!--android:label="@string/app_name"-->
+                  <!--android:windowSoftInputMode="adjustResize">-->
+        <!--</activity>-->
+        <activity android:name=".activities.UploadPostPhotoActivity"
+                  android:label="@string/app_name"
+                  android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity android:name=".activities.PickFriendsActivity"
+                  android:label="Pick Friends">
+        </activity>
+        <activity android:name=".activities.PickGroupFriendsActivity">
+        </activity>
+        <activity android:name=".activities.GroupsMembersSelectActivity"
+            	  android:label="Pick Group Members">
+        </activity>
+        <activity android:name="com.facebook.LoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name" />
+        
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+
+        <activity android:name=".heartrate.HeartRateMonitor"/>
+        <activity android:name=".activities.HeartRateActivity" android:label="Heart Rate"/>
+
+        <activity android:name=".project.ProjectApp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".project.ListProjectActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+            <activity android:name=".project.SensorAppActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait" />
+
+                <activity android:name=".project.ViewSensorProject"
+                    android:label="@string/app_name"
+                    android:screenOrientation="portrait" />
+
+
+        <activity android:name=".activities.ViewerActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".project.SensorApp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+
+        <service android:name=".project.SensorPressure"/>
+        <service android:name=".project.SensorAccelerometer"/>
+    </application>
+
+</manifest>

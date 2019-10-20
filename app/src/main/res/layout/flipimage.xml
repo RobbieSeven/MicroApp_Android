@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flip_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    <ImageView
+        android:id="@+id/flipimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scaleType="center"
+        android:contentDescription="@string/image"/>
+
+	</ScrollView>
+    <Button
+        android:id="@+id/flip_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mybutt"
+        android:padding="10dp"
+        android:text="flip horizontal"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/flip_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flip_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mybutt"
+        android:padding="10dp"
+        android:text="flip vertical"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

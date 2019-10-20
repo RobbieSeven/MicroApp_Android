@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainpanelscreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/framescreen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <it.unisa.microapp.editor.MainPanel
+            android:id="@+id/surface"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/iconselect"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="5dp"
+            android:background="@drawable/editorbutton" 
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+        <Button
+            android:id="@+id/iconmodify"
+            android:layout_width="@dimen/bottom_button"
+            android:layout_height="@dimen/bottom_button"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/bottom_margin"
+            android:background="@drawable/editormodify" 
+            style="?android:attr/buttonBarButtonStyle"/>    
+            
+        <Button
+            android:id="@+id/iconoutline"
+            android:layout_width="@dimen/bottom_button"
+            android:layout_height="@dimen/bottom_button"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/bottom_margin"
+            android:background="@drawable/editormodify" 
+            style="?android:attr/buttonBarButtonStyle"/>           
+    </FrameLayout>
+
+</LinearLayout>

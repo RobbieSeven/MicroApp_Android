@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- discoverer info -->
+    <discoverer>
+        <disco_ip>http://demo.openhab.org</disco_ip>
+        <disco_port>8080</disco_port>
+        <!-- test = true viene testato il web service, false viene eseguito normalmente -->
+        <test>false</test>
+    </discoverer>
+
+</configuration>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titoloUp"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center|top"
+        android:text="@string/upload"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/twap_nomeapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appname"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/twap_nomea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/autore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autore"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/twap_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screenshot"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/imw_carica"
+        android:layout_width="134dp"
+        android:layout_height="0dip"
+        android:layout_weight="0.28"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/twap_descrizione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descrizione"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" 
+        android:labelFor="@+id/ap_descrizione12"/>
+
+    <EditText
+        android:id="@+id/ap_descrizione12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/menu_carica"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:drawableLeft="@drawable/menu"
+        android:text="@string/upload" />
+
+</LinearLayout>

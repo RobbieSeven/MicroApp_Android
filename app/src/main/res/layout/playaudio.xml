@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal"
+	android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+
+     <TextView
+        android:id="@+id/pre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The audio that you took"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </TextView>
+     
+       <ImageView
+           android:id="@+id/playaudio"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center|center_horizontal"
+           android:gravity="center|center_horizontal"
+           android:padding="19dp"
+           android:src="@drawable/alt" 
+           android:contentDescription="@string/image"/>
+       
+	<LinearLayout
+	     android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+	     android:orientation="horizontal"
+	     android:gravity="center"
+	     style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_media_stop"
+            android:text="@string/stop" 
+            android:onClick="doClick"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/button_play"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableLeft="@drawable/ic_media_play"
+            android:text="@string/play" 
+            android:onClick="doClick"
+            style="?android:attr/buttonBarButtonStyle"/>
+     <!-- <Button
+            android:id="@+id/button_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Pause" 
+            android:onClick="doClick"
+            style="?android:attr/buttonBarButtonStyle"/>
+ 										-->   
+	</LinearLayout>
+	<include
+        android:layout_height="50dp"
+        layout="@layout/microapp" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="key">
+        <item>ee5c1b76ac77a4a</item>  <!-- Samsung galaxy S4 Michele -->
+        <item>94e515fe60e2bbe5</item> <!-- Samsung galaxy S2 Michele -->
+        <item>90e5ece4f3f6a169</item> <!-- Samsung galaxy S4 Genny -->
+        <item>42c94889c1018281</item> <!-- Samsung galaxy S4 Rita -->
+        <item>79b7701be5e92dbb</item> <!-- Samsung galaxy note 10.1 Rita -->
+        <item>cf7d0e6a1f1bb6d9</item> <!-- Emulatore Michele -->
+    	<item>712f986265cb6d5e</item> <!-- nexus 7 Vincenzo Savarese -->
+        <item>6d6e16bb248b874e</item> <!-- nexus 4 Vincenzo Savarese -->
+    </string-array>
+
+</resources>

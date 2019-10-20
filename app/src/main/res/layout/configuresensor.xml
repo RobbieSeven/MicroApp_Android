@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center|top"
+        android:text="@string/editor_sensor"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/nomeproject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sensor"
+        android:inputType="text"
+        android:text="@string/sensor"
+        android:textColor="@color/YELLOW" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_service"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <!--<Spinner-->
+    <!--android:id="@+id/spinner2"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/chkOne"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:text="@string/accelerometer" />-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/chkTwo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:text="@string/pressure" />-->
+
+        <RadioGroup
+            android:id="@+id/radioSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/pressure"
+                android:text="@string/pressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/accelerometer"
+                android:text="@string/accelerometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.52"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/describe"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLength="150" />
+
+    <Button
+        android:id="@+id/btnsave"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:drawableTop="@android:drawable/ic_menu_save"
+        android:text="@string/save" />
+
+</LinearLayout>

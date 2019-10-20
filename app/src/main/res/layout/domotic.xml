@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center|center_horizontal"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical" >
+
+ <ImageView 
+   android:id="@+id/foto"
+   android:src="@drawable/openhab"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:contentDescription="@string/image"
+   />
+
+    <TextView
+        android:id="@+id/pre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OpenHab Domotic service"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        layout="@layout/microapp" />
+
+</LinearLayout>

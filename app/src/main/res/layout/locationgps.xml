@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainlayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvTitoloApp"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center|top"
+                android:text="@string/gpsLocation"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioGps"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gps" 
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/network"
+                android:clickable="false" />
+        </LinearLayout>    
+    
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvLatitudineLabel"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/tvLatitudine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLatitudineLabel"
+                android:layout_toRightOf="@+id/tvLatitudineLabel"
+                android:text="@string/noData" />
+
+            <TextView
+                android:id="@+id/tvLongitudineLabel"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLatitudineLabel"
+                android:text="@string/longitude" />
+
+            <TextView
+                android:id="@+id/tvLongitudine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvLongitudineLabel"
+                android:layout_toRightOf="@+id/tvLongitudineLabel"
+                android:text="@string/noData" />
+
+            <TextView
+                android:id="@+id/tvVelocitaLabel"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLongitudineLabel"
+                android:text="@string/velocity" />
+
+            <TextView
+                android:id="@+id/tvVelocita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvVelocitaLabel"
+                android:layout_toRightOf="@+id/tvVelocitaLabel"
+                android:text="@string/noData" />
+
+            <TextView
+                android:id="@+id/tvQuotaLabel"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvVelocitaLabel"
+                android:text="@string/altitude" />
+
+            <TextView
+                android:id="@+id/tvQuota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvQuotaLabel"
+                android:layout_toRightOf="@+id/tvQuotaLabel"
+                android:text="@string/noData" />
+
+            <TextView
+                android:id="@+id/tvAccuratezzaLabel"
+                android:layout_width="85dip"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvQuotaLabel"
+                android:text="@string/accuracy" />
+
+            <TextView
+                android:id="@+id/tvAccuratezza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tvAccuratezzaLabel"
+                android:layout_toRightOf="@+id/tvAccuratezzaLabel"
+                android:text="@string/noData" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    <include layout="@layout/microapp" />
+ 
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/discotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/discovery"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/discosrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/discotxt"
+        android:layout_marginTop="22dp"
+        android:layout_toStartOf="@+id/discobutt" 
+        android:hint="@string/searchkey">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/discobutt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"        
+        android:layout_alignBottom="@+id/discosrc"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/discosrc"
+        style="?android:attr/buttonBarButtonStyle"
+        android:drawableTop="@android:drawable/ic_menu_search"/>
+        
+    <LinearLayout
+        android:id="@+id/discolin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/discosrc"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+</RelativeLayout>

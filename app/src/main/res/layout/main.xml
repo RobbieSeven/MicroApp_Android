@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:id="@+id/linearLayoutRoot">
+
+    <LinearLayout
+        android:id="@+id/linearLayout0"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center" >
+
+        <TextView
+            android:id="@+id/benv"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="0.02"
+            android:clickable="false"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/welcome_app_name"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/benvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/app_version"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+            
+    <ImageView
+        android:id="@+id/logoapp"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/microapp" />
+
+    <TextView
+        android:id="@+id/namefile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:textColor="@color/GREEN"
+        android:textIsSelectable="false" />
+
+    <TextView
+        android:id="@+id/descfile"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.16"
+        android:lines="5"
+        android:textIsSelectable="false" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutProject"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|clip_vertical" >
+
+        <Button
+            android:id="@+id/project"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:onClick="newProject"
+            android:text="@string/project" />
+
+        <Button
+            android:id="@+id/runProject"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="118dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@drawable/ic_menu_play_clip"
+            android:text="@string/run_project" />
+
+        <Button
+            android:id="@+id/newSensor"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="128dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:onClick="newSensor"
+            android:text="@string/new_sensor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|clip_vertical" >
+
+        <Button
+            android:id="@+id/sfoglia"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.45"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:state_enabled="true"
+            android:text="@string/browse" />
+
+        <Button
+            android:id="@+id/avvia"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@android:drawable/ic_media_play"
+            android:state_enabled="false"
+            android:text="@string/run" />
+
+        <Button
+            android:id="@+id/butt_deploy"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.26"
+            android:drawableLeft="@android:drawable/ic_menu_manage"
+            android:onClick="newDeploy"
+            android:text="@string/deploy" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|clip_vertical" >
+
+        <Button
+            android:id="@+id/butt_new_editor"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.33"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:onClick="newEditing"
+            android:text="@string/_new" />
+
+        <Button
+            android:id="@+id/modifica_butt"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@android:drawable/ic_menu_edit"
+            android:onClick="modifica"
+            android:state_enabled="false"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/delete_butt"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="105dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.24"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:onClick="cancella"
+            android:state_enabled="false"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center|clip_vertical" >
+
+        <Button
+            android:id="@+id/editGestures"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="158dp"
+            android:layout_height="60dp"
+            android:drawableLeft="@android:drawable/ic_menu_preferences"
+            android:text="@string/edit_gestures" />
+
+        <Button
+            android:id="@+id/runGestures"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="190dp"
+            android:layout_height="60dp"
+            android:drawableRight="@drawable/ic_menu_play_clip"
+            android:text="@string/run_gestures" />
+    </LinearLayout>
+
+</LinearLayout>

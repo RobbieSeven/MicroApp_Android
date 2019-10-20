@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:gravity="center"
+        android:text="@string/gestures_loading" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle">
+
+        <Button
+            android:id="@+id/reloadButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:enabled="false"
+            android:onClick="reloadGestures"
+            android:text="@string/button_reload" 
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+        <Button
+            android:id="@+id/createButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:onClick="createIconGesture"
+            android:text="@string/icon"
+            android:drawableLeft="@drawable/install"
+            style="?android:attr/buttonBarButtonStyle"/>        
+
+        <Button
+            android:id="@+id/destroyButton"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:onClick="destroyIconGesture"
+            android:text="@string/icon" 
+            android:drawableLeft="@drawable/uninstall"            
+            style="?android:attr/buttonBarButtonStyle"/>           
+    </LinearLayout>
+
+</LinearLayout>
+

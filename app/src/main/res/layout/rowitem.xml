@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#000000"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/appImage"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@string/image"/>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/appImage"
+        android:text="@string/nome"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/appDesc"
+        android:layout_width="190dp"
+        android:layout_height="25dp"
+        android:layout_alignLeft="@+id/appName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/descrizione"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:typeface="sans" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1search"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/appName"
+        android:layout_alignRight="@+id/appDesc"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+</RelativeLayout>

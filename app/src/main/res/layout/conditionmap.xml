@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/center"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            android:onClick="myClickHandler" />
+
+        <Button
+            android:id="@+id/traffic"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:onClick="myClickHandler"
+            android:text="@string/traffic" />
+
+        <Button
+            android:id="@+id/normal"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:onClick="myClickHandler"
+            android:text="@string/normal" />
+
+        <Button
+            android:id="@+id/clean"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+            android:onClick="myClickHandler" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.87" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/done"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4534137"
+            android:drawableLeft="@drawable/download_icon"
+            android:onClick="myClickHandler"
+            android:text="@string/get" />
+
+        <TextView
+            android:id="@+id/meters"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="14548392"
+            android:gravity="center"
+            android:text="@string/empty" />
+    </LinearLayout>
+
+</LinearLayout>

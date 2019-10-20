@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchapp1"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.01" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView 
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center|top"
+        android:text="@string/download"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/searchapp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_toLeftOf="@+id/searchdownload"
+        android:ems="10" 
+        android:hint="@string/insertvalue"/>
+
+    <Button
+        android:id="@+id/searchdownload"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/searchapp1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/searchapp1"
+        android:drawableTop="@android:drawable/ic_menu_search" />
+</RelativeLayout>

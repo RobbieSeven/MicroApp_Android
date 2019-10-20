@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- discoverer info -->
+    <discoverer>
+        <disco_ip>http://www.sesa.dmi.unisa.it/discoverer/discoverer</disco_ip>
+        <disco_namespace>http://microapp.unisa.it/</disco_namespace>
+        <disco_operation>findWebServices</disco_operation>
+        <!-- test = true viene testato il web service, false viene eseguito normalmente -->
+        <test>false</test>
+    </discoverer>
+    <!-- lista dei registri UDDI -->
+
+    <uddi_nodes>
+        <uddi_url>http://www.sesa.dmi.unisa.it/juddiv3/services/inquiry</uddi_url>
+    </uddi_nodes>
+
+</configuration>

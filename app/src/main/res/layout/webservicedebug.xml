@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+    android:text="WEB SERVICE DEBUG"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+
+ <TextView
+ 		android:id="@+id/wsdluri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        <TextView
+ 		android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        <TextView
+ 		android:id="@+id/port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        <TextView
+ 		android:id="@+id/operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        <TextView
+ 		android:id="@+id/tns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        <TextView
+ 		android:id="@+id/userInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> 
+        
+<include layout="@layout/microapp" /> 
+</LinearLayout>

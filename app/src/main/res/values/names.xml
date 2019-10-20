@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MicroApp</string>
+    <string name="app_fullname">MicroApp Generator</string>
+    <string name="app_location">University of Salerno</string>
+    <string name="app_version">0.7.6</string>
+
+    <!--  <string name="app_id">326721630804245</string>  -->
+    <string name="app_id">632599716807859</string> <!-- modificato mettendo app id di facebook sdk -->
+
+     <!-- team -->
+     <!--  TODO: aggiungi qui il tuo nome al termine del progetto -->
+    <string-array name="team">
+        <item>Rita Francese \nMichele Risi \nGenny Tortora</item>
+        <item>Visual Editor*: \nGaetano Buonocore \nFrancesco Annunziata \nDamiano Senese</item>
+		<item>Engine: \nDaniele Valenza \nLuigi Immobile</item>
+		<item>Web Services: \nFrancesco Annunziata</item>
+		<item>Multimedia/Advertising: \nLuigi Vitale</item>
+		<item>Web Store/User Feedback: \nNicolò Pergola</item>
+		<item>Gesture: \nGino Farisano</item>
+		<item>New Component: \nDanilo Ferraiolo \nAlfonso Cavalieri</item>
+		<item>Automatic GUI Generation: \nRoberto Di Martino</item>
+		<item>Speech GUI: \nVincenzo Savarese</item>	
+		<item>Domotic: \nAngelo Sirica</item>	
+		<item>Hierarchical Application*: \nPaola Barra \nFederico Campochiaro</item>
+		<item>Native Generation: \nEmanuel Pinna</item>	
+		<item>Facebook OpenGraph Components*: \nDario Todisco</item>				
+							
+    </string-array>      
+
+    <color name="gesture_color">#FFFFFF00</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="GREEN">#00CC33</color>
+    <color name="RED">#FF0000</color>
+    <color name="BLUE">#0000FF</color>
+    <color name="BLACK">#000</color>
+    <color name="YELLOW">#ffff00</color>
+    <color name="GRAY">#808080</color>
+    
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/titolo"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center|top"
+        android:text="@string/download"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TextView
+        android:id="@+id/twd_aname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appname"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/twd_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/autore_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autore"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/twd_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nickname"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/screenshot_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/screenshot"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/imageView_download"
+        android:layout_width="186dp"
+        android:layout_height="0dip"
+        android:layout_weight="0.01"
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/twd_descrizione"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descrizione"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" 
+        android:labelFor="@+id/d_descrizione"/>
+
+    <EditText
+        android:id="@+id/d_descrizione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textMultiLine">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/voto_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="@string/voto"
+        android:textColor="#C0C0C0"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1download"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <Button
+        android:id="@+id/download2"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:drawableLeft="@drawable/download_icon"
+        android:text="@string/download" />
+
+</LinearLayout>
